@@ -1,0 +1,6 @@
+def Sorting(lst):
+    lst2 = sorted(lst, key=len)
+    return lst2
+with open('subjects.txt') as f:
+    subjectsStr = f.read().splitlines()
+print(Sorting(subjectsStr))
